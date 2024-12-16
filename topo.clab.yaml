@@ -1,0 +1,17 @@
+name: scrapli_test
+topology:
+  nodes:
+    csr1:
+      kind: cisco_csr1000v
+      image: vrnetlab/cisco_csr1000v:17.03.02
+    csr2:
+      kind: cisco_csr1000v
+      image: vrnetlab/cisco_csr1000v:17.03.02-scrapli
+    csr3:
+      kind: cisco_csr1000v
+      image: vrnetlab/cisco_csr1000v:17.03.02
+      startup-config: ./startup.cfg
+    csr4:
+      kind: cisco_csr1000v
+      image: vrnetlab/cisco_csr1000v:17.03.02-scrapli
+      startup-config: ./startup.cfg
